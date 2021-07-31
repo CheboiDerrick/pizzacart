@@ -1,0 +1,28 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+nav{
+    background: rgba(255,255,0,1);
+    color: black;
+}
+
+.navbar-custom .navbar-text {
+    color: black;
+}
+
+nav .btn {
+    background: black;
+    /* margin-left: 100px; */
+}
+
+nav .nav-link{
+    
+}
+
+.header{
+    background-image: linear-gradient(to right, #ff8300, #ff7900, #ff6f00, #ff6400, #ff5800, #ed4617, #d93621, #c42626, #941b2a, #631726);
+    height: 100vh;
+}
