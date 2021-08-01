@@ -1,93 +1,135 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
-    
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"
+        integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js"
+        integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF"
+        crossorigin="anonymous"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+
     <link rel="stylesheet" href="./css/style.css">
 
     <title>Pizza 'n Chill</title>
 </head>
+
 <body>
-        <!-- navigation bar -->
-        <nav class="navbar navbar-expand-lg navbar-light ">
-            <div class="container-fluid">
-                <a class="navbar-brand" href="./index.html">Pizza 'n Chill</a>
-                <!-- collapsing menu - hamburger  -->
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <!-- navigation bar -->
+    <nav class="navbar navbar-expand-lg navbar-light sticky-top ">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="./index.html">Pizza 'n Chill</a>
+            <!-- collapsing menu - hamburger  -->
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
-                </button>
-                <!-- menu items -->
-                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            </button>
+            <!-- menu items -->
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
                     <li class="nav-item">
-                    <a class="nav-link active" aria-current="page" href="#">Home</a>
+                        <a class="nav-link active" aria-current="page" href="#">Home</a>
                     </li>
                     <li class="nav-item">
-                    <a class="nav-link" href="#">Order</a>
+                        <a class="nav-link" href="#">Order</a>
                     </li>
                     <li class="nav-item">
-                    <a class="nav-link" href="#">About Us</a>
+                        <a class="nav-link" href="#">About Us</a>
                     </li>
                     <li class="nav-item">
-                    <a id="order" href="#" class="nav-link btn btn-primary">ORDER NOW</a>
+                        <a id="order" href="#" class="nav-link btn btn-primary">ORDER NOW</a>
                     </li>
                 </ul>
-                </div>
-            </div>
-        </nav>
-        <!-- order form -->
-        <div class="container">
-            <div class="row g-0 mx-auto py-5" >
-                <div class="col-md-4">
-                    <img src="./images/foad-roshan-Y6OgisiGBjM-unsplash.jpg" alt="" class="image-responsive" width="100%">
-                </div>
-                <div class="col-md-4 text-center mx-auto">
-                    <h1>Order your Pizza</h1>
-                    <form action="">
-                        <select id="sizes" class="form-select form-select-sm mb-2" aria-label=".form-select-sm example">
-                            <option selected>Select your Pizza size</option>
-                            <option value="mini">Mini - 6"</option>
-                            <option value="regular">Regular - 10"</option>
-                            <option value="large">Large - 14" </option>
-                            <option value="fiesta">Fiesta - 16" </option>
-                          </select>
-                          <div class="crust">
-                            <p>Select a Crust of your liking</p>
-                            <div class="form-check">
-                              <input class="form-check-input" type="radio" name="crust" id="thin">
-                              <label class="form-check-label" for="thin">
-                                Thin
-                              </label>
-                            </div>
-                            <div class="form-check">
-                              <input class="form-check-input" type="radio" name="crust" id="thin">
-                              <label class="form-check-label" for="thin">
-                                Thin
-                              </label>
-                            </div>
-                            <div class="form-check">
-                              <input class="form-check-input" type="radio" name="crust" id="thin">
-                              <label class="form-check-label" for="thin">
-                                Thin
-                              </label>
-                            </div>
-                            <div class="form-check">
-                              <input class="form-check-input" type="radio" name="crust" id="thin">
-                              <label class="form-check-label" for="thin">
-                                Thin
-                              </label>
-                            </div>
-                          </div> 
-                    </form>
-                </div>
             </div>
         </div>
-
+    </nav>
+    <!-- order form -->
+    <div class="container" id="form-card">
+        <div class="row g-0 mx-auto py-3">
+            <div class="col-md-4">
+                <img src="./images/foad-roshan-Y6OgisiGBjM-unsplash.jpg" alt="" class="image-responsive" width="100%">
+            </div>
+            <div class="col-md-5 text-center mx-auto">
+                <h2>Order your Pizza</h2>
+                <form action="">
+                    <select id="sizes" class="form-select form-select-sm mb-2" aria-label=".form-select-sm example">
+                        <option selected>Select your Pizza size</option>
+                        <option value="mini">Mini - 6"</option>
+                        <option value="regular">Regular - 10"</option>
+                        <option value="large">Large - 14" </option>
+                        <option value="fiesta">Fiesta - 16" </option>
+                    </select>
+                    <div class="crust mb-3">
+                        <p class="mb-0">Select a Crust of your liking</p>
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" name="crust" id="thin">
+                            <label class="form-check-label me-3" for="thin">
+                                Thin
+                            </label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" name="crust" id="flatbread">
+                            <label class="form-check-label me-3" for="flatbread">
+                                Flatbread
+                            </label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" name="crust" id="crispy">
+                            <label class="form-check-label me-3" for="crispy">
+                                Crispy
+                            </label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" name="crust" id="bagel">
+                            <label class="form-check-label" for="bagel">
+                                Pizza Bagel
+                            </label>
+                        </div>
+                    </div>
+                    <div class="toppings">
+                        <h6>Choose one or more toppings</h6>
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" value="pepperoni" id="pepperoni">
+                            <label class="form-check-label me-2" for="pepperoni">
+                              Pepperoni
+                            </label>
+                          </div>
+                          <div class="form-check">
+                            <input class="form-check-input" type="checkbox" value="bacon" id="bacon">
+                            <label class="form-check-label me-2" for="bacon">
+                              Bacon
+                            </label>
+                          </div>
+                          <div class="form-check">
+                            <input class="form-check-input" type="checkbox" value="mushroom" id="mushroom">
+                            <label class="form-check-label me-2" for="mushroom">
+                              Mushroom
+                            </label>
+                          </div>
+                          <div class="form-check">
+                            <input class="form-check-input" type="checkbox" value="greenpepper" id="greenpepper">
+                            <label class="form-check-label me-2" for="greenpepper">
+                              Green Peppers
+                            </label>
+                          </div>
+                    </div>
+                    <div>
+                        <button class="btn btn-primary mt-3">Place Order</button>
+                        <button class="btn btn-primary mt-3">Add</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
 </body>
+
 </html>
