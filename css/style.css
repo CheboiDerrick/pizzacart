@@ -54,5 +54,16 @@ nav #order {
 }
 
 #form-card{
-    box-shadow: 0 20px 25px -5px rgba(0, 0, 0, .10),0 10px 10px -5px rgba(0, 0, 0, .04),;
+    box-shadow: 0 20px 25px -5px rgba(0 0 0 / .10), 0 10px 10px -5px rgba(0 0 0 / .04);
+    background-color: rgba(255,106,50, 0.7);
+    border-radius: 0 20px 20px 0;
+}
+
+
+#main-card{
+    background-color:rgba(15, 15, 15, 0.836) 
+}
+
+#main-card img{
+    border-radius: 20px 0 0 20px;
 }

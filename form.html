@@ -40,36 +40,38 @@
                         <a class="nav-link active" aria-current="page" href="#">Home</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Order</a>
+                        <a class="nav-link" href="./form.html">Order</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="#">About Us</a>
                     </li>
                     <li class="nav-item">
-                        <a id="order" href="#" class="nav-link btn btn-primary">ORDER NOW</a>
+                        <a id="order" href="./form.html" class="nav-link btn btn-primary">ORDER NOW</a>
                     </li>
                 </ul>
             </div>
         </div>
     </nav>
     <!-- order form -->
-    <div class="container" id="form-card">
-        <div class="row g-0 mx-auto py-3">
+    <div class="container mx-auto" id="main-card">
+        <div class="row d-flex justify-content-center align-content-center g-0 mx-auto py-3">
             <div class="col-md-4">
                 <img src="./images/foad-roshan-Y6OgisiGBjM-unsplash.jpg" alt="" class="image-responsive" width="100%">
             </div>
-            <div class="col-md-5 text-center mx-auto">
-                <h2>Order your Pizza</h2>
+            <div class="col-md-6 text-center" id="form-card">
+                <h2 class="mt-3">Order your Pizza</h2>
                 <form action="">
-                    <select id="sizes" class="form-select form-select-sm mb-2" aria-label=".form-select-sm example">
-                        <option selected>Select your Pizza size</option>
-                        <option value="mini">Mini - 6"</option>
-                        <option value="regular">Regular - 10"</option>
-                        <option value="large">Large - 14" </option>
-                        <option value="fiesta">Fiesta - 16" </option>
-                    </select>
+                    <div class="mx-auto" style="width: 80%;">
+                        <select id="sizes" class="form-select form-select-sm mb-3" aria-label=".form-select-sm example">
+                            <option selected>Select your Pizza size</option>
+                            <option value="mini">Mini - 6"</option>
+                            <option value="regular">Regular - 10"</option>
+                            <option value="large">Large - 14" </option>
+                            <option value="fiesta">Fiesta - 16" </option>
+                        </select>
+                    </div>
                     <div class="crust mb-3">
-                        <p class="mb-0">Select a Crust of your liking</p>
+                        <h5 class="mb-2">Select a Crust of your liking</h5>
                         <div class="form-check">
                             <input class="form-check-input" type="radio" name="crust" id="thin">
                             <label class="form-check-label me-3" for="thin">
@@ -96,7 +98,7 @@
                         </div>
                     </div>
                     <div class="toppings">
-                        <h6>Choose one or more toppings</h6>
+                        <h5>Choose one or more toppings</h5>
                         <div class="form-check">
                             <input class="form-check-input" type="checkbox" value="pepperoni" id="pepperoni">
                             <label class="form-check-label me-2" for="pepperoni">
@@ -123,10 +125,12 @@
                           </div>
                     </div>
                     <div>
-                        <button class="btn btn-primary mt-3">Place Order</button>
-                        <button class="btn btn-primary mt-3">Add</button>
+                        <button type="button" class="btn btn-primary mt-3">Add</button>
                     </div>
                 </form>
+                <h4>Your Order Items</h4>
+                <div id="orderitems"></div>
+                <button type="button" class="btn btn-primary mt-3">Place Order</button>
             </div>
         </div>
     </div>
