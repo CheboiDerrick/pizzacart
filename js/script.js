@@ -88,5 +88,17 @@ createPizzaItem = () => {
     console.log(totalcost);
     console.log(newPizza.toppingsType.toString())
 
-    
-}
+    div = document.createElement('div')
+    div.setAttribute('class', 'list')
+    document.getElementById('item-list').appendChild(div)
+    p = document.createElement('p');
+    let orderText = document.createTextNode(newPizza.crustName + ' ' + newPizza.toppingsType + ' ' + newPizza.sizeName);
+    p.setAttribute('id', 'item');
+    p.appendChild(orderText);
+    div.appendChild(p);
+    p = document.createElement('p');
+    let subTotalText = document.createTextNode(newPizza.cost);
+    p.setAttribute('id', 'sub-total');
+    p.appendChild(subTotalText);
+    div.appendChild(p);
+};
