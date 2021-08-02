@@ -102,22 +102,24 @@ createPizzaItem = () => {
     p.appendChild(subTotalText);
     div.appendChild(p);
 
-    // reset()
+    divTotal = document.createElement('div')
+    divTotal.setAttribute('class', 'grandTotal')
+    document.getElementById('grand-total').appendChild(divTotal)
+    h6 = document.createElement('h6')
+    let totalText = document.createTextNode('Kshs'+ ' ' + totalcost);
+    h6.setAttribute('id', 'totalCost')
+    h6.appendChild(totalText)
+    divTotal.appendChild(h6)
+    clearForm()
 };
 
-
-function reset() {
-    // for (i = 0; i < document.sizes.length; i++)
-    //     document.sizes[i].checked = false;
-
-
-    for (i = 0; i < document.crust.length; i++)
-        document.crust[i].checked = false
-
-
-    for (i = 0; i < document.toppings.length; i++)
-        document.toppings[i].checked = false
-
-    // document.getElementById('totalSum').value = '';
-
-}
+function clearForm(form) {
+    $(':input', form).each(function() {
+      var type = this.type;
+      var tag = this.tagName.toLowerCase(); 
+      if (type == 'checkbox' || type == 'radio')
+        this.checked = false;
+      else if (tag == 'select')
+        this.selectedIndex = 0;
+    });
+  };

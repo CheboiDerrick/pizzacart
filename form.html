@@ -5,6 +5,9 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"
         integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p"
         crossorigin="anonymous"></script>
@@ -77,7 +80,7 @@
                             <div class="crust mb-3">
                                 <h5 class="mb-2">Select a Crust of your liking</h5>
                                 <div class="form-check">
-                                    <input class="form-check-input" type="radio" name="crust" id="thin" value="thin">
+                                    <input class="form-check-input" type="radio" name="crust" id="thin" value="Thin">
                                     <label class="form-check-label me-3" for="Thin">
                                         Thin
                                     </label>
@@ -91,13 +94,13 @@
                                 </div>
                                 <div class="form-check">
                                     <input class="form-check-input" type="radio" name="crust" id="stuffed"
-                                        value="stuffed">
-                                    <label class="form-check-label me-3" for="Stuffed">
+                                        value="Stuffed">
+                                    <label class="form-check-label me-3" for="stuffed">
                                         Stuffed
                                     </label>
                                 </div>
                                 <div class="form-check">
-                                    <input class="form-check-input" type="radio" name="crust" id="bagel" value="Pizza  bagel">
+                                    <input class="form-check-input" type="radio" name="crust" id="bagel" value="Pizza bagel">
                                     <label class="form-check-label" for="bagel">
                                         Pizza Bagel
                                     </label>
@@ -140,15 +143,19 @@
                             </div>
                         </form>
                         <div class="cart text-start">
-                            <h4 class="cart-title text-center">Your Order</h4>
+                            <h5 class="cart-title text-center">Your Order</h5>
                             <div id="item-list">
                                 <!-- <p id="item" class="item"></p> -->
                                 <!-- <p id="sub-total"></p> -->
                             </div>
                             <div class="grand-total">
-                                <h5>Total</h5>
-                                <h5 class="total"></h5>
+                                <h6>Total</h6>
+                                <div id="grand-total">
+                                    
+                                    <!-- <h6 class="total" id="totalCost"></h6> -->
+                                </div>
                             </div>
+                            
                             <div class="text-center">
                             <button type="button" class="btn btn-warning mt-3 mb-3">Place Order</button>
                             </div>
