@@ -32,26 +32,26 @@ createPizzaItem = () => {
         let crustCost
         let sizeCost
         let toppingsCost
-        if (size == 'mini') {
+        if (size == 'Mini') {
             sizeCost = 300;
         }
-        else if (size == 'regular') {
+        else if (size == 'Regular') {
             sizeCost = 450;
         }
-        else if (size == 'large') {
+        else if (size == 'Large') {
             sizeCost = 600;
         }
-        else if (size == 'fiesta') {
+        else if (size == 'Fiesta') {
             sizeCost = 800;
         }
         console.log(sizeCost);
-        if (crust == 'thin') {
+        if (crust == 'Thin') {
             crustCost = 200;
-        } else if (crust == 'flatbread') {
+        } else if (crust == 'Flatbread') {
             crustCost = 300;
-        } else if (crust == 'stuffed') {
+        } else if (crust == 'Stuffed') {
             crustCost = 400;
-        } else if (crust == 'bagel') {
+        } else if (crust == 'Pizza bagel') {
             crustCost = 500;
         }
 
@@ -67,7 +67,7 @@ createPizzaItem = () => {
             if (element == 'Mushroom') {
                 toppingsCost += 200;
             }
-            if (element == 'Greenpepper') {
+            if (element == 'Green pepper') {
                 toppingsCost += 200;
             }
             console.log(toppingsCost);
@@ -92,12 +92,12 @@ createPizzaItem = () => {
     div.setAttribute('class', 'list')
     document.getElementById('item-list').appendChild(div)
     p = document.createElement('p');
-    let orderText = document.createTextNode(newPizza.sizeName + ' ' + newPizza.crustName + ' ' + 'with' + ' ' + newPizza.toppingsType.join(', ').toString());
+    let orderText = document.createTextNode(newPizza.sizeName + ' ' + newPizza.crustName + ' ' + 'Pizza' +' ' + 'with' + ' ' + newPizza.toppingsType.join(', ').toString());
     p.setAttribute('id', 'item');
     p.appendChild(orderText);
     div.appendChild(p);
     p = document.createElement('p');
-    let subTotalText = document.createTextNode(newPizza.cost);
+    let subTotalText = document.createTextNode('@'+ ' ' + newPizza.cost);
     p.setAttribute('id', 'sub-total');
     p.appendChild(subTotalText);
     div.appendChild(p);

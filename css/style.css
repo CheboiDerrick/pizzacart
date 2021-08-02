@@ -74,3 +74,9 @@ nav #order {
   border-left: 1px solid #ffc107;
     border-radius: 20px 0 0 20px;
 }
+
+.list{
+  display: flex;
+  justify-content: space-between;
+  margin: 0 1rem 0 1rem;
+}
