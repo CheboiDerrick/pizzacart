@@ -24,120 +24,139 @@
 
 <body>
     <div class="main">
-    <!-- navigation bar -->
-    <nav class="navbar navbar-expand-lg navbar-light sticky-top ">
-        <div class="container-fluid">
-            <a class="navbar-brand" href="./index.html">Pizza 'n Chill</a>
-            <!-- collapsing menu - hamburger  -->
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
-                aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <!-- menu items -->
-            <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
-                    <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="#">Home</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="./form.html">Order</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">About Us</a>
-                    </li>
-                    <li class="nav-item">
-                        <a id="order" href="./form.html" class="nav-link btn btn-primary">ORDER NOW</a>
-                    </li>
-                </ul>
+        <!-- navigation bar -->
+        <nav class="navbar navbar-expand-lg navbar-light sticky-top ">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="./index.html">Pizza 'n Chill</a>
+                <!-- collapsing menu - hamburger  -->
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <!-- menu items -->
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="#">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./form.html">Order</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">About Us</a>
+                        </li>
+                        <li class="nav-item">
+                            <a id="order" href="./form.html" class="nav-link btn btn-primary">ORDER NOW</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <!-- order form -->
+        <div class="bg">
+            <div class="container mx-auto" id="main-card">
+                <div class="row d-flex justify-content-center align-content-center g-0 mx-auto py-3">
+                    <div class="col-md-4">
+                        <img src="./images/foad-roshan-Y6OgisiGBjM-unsplash.jpg" alt="" class="image-responsive"
+                            width="100%">
+                    </div>
+                    <div class="col-md-6 text-center" id="form-card">
+                        <h2 class="mt-3">Order your Pizza</h2>
+                        <form action="">
+                            <div class="mx-auto" style="width: 100%;">
+                                <select id="sizes" class="form-select form-select-sm mb-3"
+                                    aria-label=".form-select-sm example">
+                                    <option selected>Select your Pizza size</option>
+                                    <option value="mini">Mini - 6"</option>
+                                    <option value="regular">Regular - 10"</option>
+                                    <option value="large">Large - 14" </option>
+                                    <option value="fiesta">Fiesta - 16" </option>
+                                </select>
+                            </div>
+                            <div class="crust mb-3">
+                                <h5 class="mb-2">Select a Crust of your liking</h5>
+                                <div class="form-check">
+                                    <input class="form-check-input" type="radio" name="crust" id="thin">
+                                    <label class="form-check-label me-3" for="thin">
+                                        Thin
+                                    </label>
+                                </div>
+                                <div class="form-check">
+                                    <input class="form-check-input" type="radio" name="crust" id="flatbread"
+                                        value="flatbread">
+                                    <label class="form-check-label me-3" for="flatbread">
+                                        Flatbread
+                                    </label>
+                                </div>
+                                <div class="form-check">
+                                    <input class="form-check-input" type="radio" name="crust" id="stuffed"
+                                        value="stuffed">
+                                    <label class="form-check-label me-3" for="stuffed">
+                                        Stuffed
+                                    </label>
+                                </div>
+                                <div class="form-check">
+                                    <input class="form-check-input" type="radio" name="crust" id="bagel" value="bagel">
+                                    <label class="form-check-label" for="bagel">
+                                        Pizza Bagel
+                                    </label>
+                                </div>
+                            </div>
+                            <div class="toppings">
+                                <h5>Choose one or more toppings</h5>
+                                <div class="form-check">
+                                    <input class="form-check-input" type="checkbox" name="toppings" value="Pepperoni"
+                                        id="pepperoni">
+                                    <label class="form-check-label me-2" for="pepperoni">
+                                        Pepperoni
+                                    </label>
+                                </div>
+                                <div class="form-check">
+                                    <input class="form-check-input" type="checkbox" name="toppings" value="Bacon"
+                                        id="bacon">
+                                    <label class="form-check-label me-2" for="bacon">
+                                        Bacon
+                                    </label>
+                                </div>
+                                <div class="form-check">
+                                    <input class="form-check-input" type="checkbox" name="toppings" value="Mushroom"
+                                        id="mushroom">
+                                    <label class="form-check-label me-2" for="mushroom">
+                                        Mushroom
+                                    </label>
+                                </div>
+                                <div class="form-check">
+                                    <input class="form-check-input" type="checkbox" name="toppings" value="Greenpepper"
+                                        id="greenpepper">
+                                    <label class="form-check-label me-2" for="greenpepper">
+                                        Green Peppers
+                                    </label>
+                                </div>
+                            </div>
+                            <div>
+                                <button type="button" class="btn btn-warning mt-3"
+                                    onclick="createPizzaItem()">Add</button>
+                            </div>
+                        </form>
+                        <div class="cart">
+                            <h4 class="cart-title">Your Order</h4>
+                            <div id="item-list">
+                                <!-- <p id="item" class="item"></p> -->
+                                <!-- <p id="sub-total"></p> -->
+                            </div>
+                            <div class="grand-total">
+                                <h5>Total</h5>
+                                <h5 class="total"></h5>
+                            </div>
+                            <button type="button" class="btn btn-warning mt-3 mb-3">Place Order</button>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
-    </nav>
-    <!-- order form -->
-    <div class="bg">
-    <div class="container mx-auto" id="main-card">
-        <div class="row d-flex justify-content-center align-content-center g-0 mx-auto py-3">
-            <div class="col-md-4">
-                <img src="./images/foad-roshan-Y6OgisiGBjM-unsplash.jpg" alt="" class="image-responsive" width="100%">
-            </div>
-            <div class="col-md-6 text-center" id="form-card">
-                <h2 class="mt-3">Order your Pizza</h2>
-                <form action="">
-                    <div class="mx-auto" style="width: 80%;">
-                        <select id="sizes" class="form-select form-select-sm mb-3" aria-label=".form-select-sm example">
-                            <option selected>Select your Pizza size</option>
-                            <option value="mini">Mini - 6"</option>
-                            <option value="regular">Regular - 10"</option>
-                            <option value="large">Large - 14" </option>
-                            <option value="fiesta">Fiesta - 16" </option>
-                        </select>
-                    </div>
-                    <div class="crust mb-3">
-                        <h5 class="mb-2">Select a Crust of your liking</h5>
-                        <div class="form-check">
-                            <input class="form-check-input" type="radio" name="crust" id="thin">
-                            <label class="form-check-label me-3" for="thin">
-                                Thin
-                            </label>
-                        </div>
-                        <div class="form-check">
-                            <input class="form-check-input" type="radio" name="crust" id="flatbread">
-                            <label class="form-check-label me-3" for="flatbread">
-                                Flatbread
-                            </label>
-                        </div>
-                        <div class="form-check">
-                            <input class="form-check-input" type="radio" name="crust" id="crispy">
-                            <label class="form-check-label me-3" for="crispy">
-                                Crispy
-                            </label>
-                        </div>
-                        <div class="form-check">
-                            <input class="form-check-input" type="radio" name="crust" id="bagel">
-                            <label class="form-check-label" for="bagel">
-                                Pizza Bagel
-                            </label>
-                        </div>
-                    </div>
-                    <div class="toppings">
-                        <h5>Choose one or more toppings</h5>
-                        <div class="form-check">
-                            <input class="form-check-input" type="checkbox" name="toppings" value="pepperoni" id="pepperoni">
-                            <label class="form-check-label me-2" for="pepperoni">
-                              Pepperoni
-                            </label>
-                          </div>
-                          <div class="form-check">
-                            <input class="form-check-input" type="checkbox" name="toppings" value="bacon" id="bacon">
-                            <label class="form-check-label me-2" for="bacon">
-                              Bacon
-                            </label>
-                          </div>
-                          <div class="form-check">
-                            <input class="form-check-input" type="checkbox" name="toppings" value="mushroom" id="mushroom">
-                            <label class="form-check-label me-2" for="mushroom">
-                              Mushroom
-                            </label>
-                          </div>
-                          <div class="form-check">
-                            <input class="form-check-input" type="checkbox" name="toppings" value="greenpepper" id="greenpepper">
-                            <label class="form-check-label me-2" for="greenpepper">
-                              Green Peppers
-                            </label>
-                          </div>
-                    </div>
-                    <div>
-                        <button type="button" class="btn btn-warning mt-3">Add</button>
-                    </div>
-                </form>
-                <h4>Your Order Items</h4>
-                <div id="orderitems"></div>
-                <button type="button" class="btn btn-warning mt-3">Place Order</button>
-            </div>
-        </div>
     </div>
-    </div>
-    </div>
+    <script src="./js/script.js"></script>
 </body>
 
 </html>

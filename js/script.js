@@ -12,10 +12,12 @@ function PizzaItem(size, toppings, crust, individualCost) {
 
 // get the user inputs
 fetchInputs = () => {
-    options = document.querySelectorAll("[name='toppings']:checked");
-    size = document.querySelector("[name='sizes']:checked").value;
+    size = document.getElementById("sizes").value;
     crust = document.querySelector("[name='crust']:checked").value;
+    options = document.querySelectorAll("[name='toppings']:checked");
     console.log(size);
+    console.log(crust);
+    console.log(options);
 }
 
 // create new pizza object on every add
@@ -30,34 +32,42 @@ createPizzaItem = () => {
         let crustCost
         let sizeCost
         let toppingsCost
-        if (size == 'Small') {
-            sizeCost = 100;
+        if (size == 'mini') {
+            sizeCost = 300;
         }
-        else if (size == 'Medium') {
-            sizeCost = 200;
+        else if (size == 'regular') {
+            sizeCost = 450;
         }
-        else if (size == 'Large') {
-            sizeCost = 400;
-        }
-        else if (size == 'X-Large') {
+        else if (size == 'large') {
             sizeCost = 600;
         }
-        console.log(sizeCost);
-        if (crust == 'Crispy') {
-            crustCost = 200;
-        } else if (crust == 'Stuffed') {
-            crustCost = 400;
+        else if (size == 'fiesta') {
+            sizeCost = 800;
         }
+        console.log(sizeCost);
+        if (crust == 'thin') {
+            crustCost = 200;
+        } else if (crust == 'flatbread') {
+            crustCost = 300;
+        } else if (crust == 'stuffed') {
+            crustCost = 400;
+        } else if (crust == 'bagel') {
+            crustCost = 500;
+        }
+
         console.log(crustCost);
         toppingsCost=0;
         toppings.forEach(element => {
-            if (element == 'BBQ-Steak') {
+            if (element == 'Pepperoni') {
                 toppingsCost += 300;
             }
-            if (element == 'Peri-Peri') {
+            if (element == 'Bacon') {
                 toppingsCost += 300;
             }
-            if (element == 'Vegan') {
+            if (element == 'Mushroom') {
+                toppingsCost += 200;
+            }
+            if (element == 'Greenpepper') {
                 toppingsCost += 200;
             }
             console.log(toppingsCost);
@@ -66,3 +76,17 @@ createPizzaItem = () => {
         console.log(totalCost)
         return totalCost
     };
+    const newPizza = new PizzaItem(size, toppings, crust, individualCost)
+    pizzas.push(newPizza);
+    totalcost = 0;
+    for (let i = 0; i < pizzas.length; i++) {
+        totalcost += pizzas[i].cost;
+    }
+    //Output
+    console.log(pizzas);
+    console.log(newPizza);
+    console.log(totalcost);
+    console.log(newPizza.toppingsType.toString())
+
+    
+}
