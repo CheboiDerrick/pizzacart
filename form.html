@@ -23,6 +23,7 @@
 </head>
 
 <body>
+    <div class="main">
     <!-- navigation bar -->
     <nav class="navbar navbar-expand-lg navbar-light sticky-top ">
         <div class="container-fluid">
@@ -53,6 +54,7 @@
         </div>
     </nav>
     <!-- order form -->
+    <div class="bg">
     <div class="container mx-auto" id="main-card">
         <div class="row d-flex justify-content-center align-content-center g-0 mx-auto py-3">
             <div class="col-md-4">
@@ -100,39 +102,41 @@
                     <div class="toppings">
                         <h5>Choose one or more toppings</h5>
                         <div class="form-check">
-                            <input class="form-check-input" type="checkbox" value="pepperoni" id="pepperoni">
+                            <input class="form-check-input" type="checkbox" name="toppings" value="pepperoni" id="pepperoni">
                             <label class="form-check-label me-2" for="pepperoni">
                               Pepperoni
                             </label>
                           </div>
                           <div class="form-check">
-                            <input class="form-check-input" type="checkbox" value="bacon" id="bacon">
+                            <input class="form-check-input" type="checkbox" name="toppings" value="bacon" id="bacon">
                             <label class="form-check-label me-2" for="bacon">
                               Bacon
                             </label>
                           </div>
                           <div class="form-check">
-                            <input class="form-check-input" type="checkbox" value="mushroom" id="mushroom">
+                            <input class="form-check-input" type="checkbox" name="toppings" value="mushroom" id="mushroom">
                             <label class="form-check-label me-2" for="mushroom">
                               Mushroom
                             </label>
                           </div>
                           <div class="form-check">
-                            <input class="form-check-input" type="checkbox" value="greenpepper" id="greenpepper">
+                            <input class="form-check-input" type="checkbox" name="toppings" value="greenpepper" id="greenpepper">
                             <label class="form-check-label me-2" for="greenpepper">
                               Green Peppers
                             </label>
                           </div>
                     </div>
                     <div>
-                        <button type="button" class="btn btn-primary mt-3">Add</button>
+                        <button type="button" class="btn btn-warning mt-3">Add</button>
                     </div>
                 </form>
                 <h4>Your Order Items</h4>
                 <div id="orderitems"></div>
-                <button type="button" class="btn btn-primary mt-3">Place Order</button>
+                <button type="button" class="btn btn-warning mt-3">Place Order</button>
             </div>
         </div>
+    </div>
+    </div>
     </div>
 </body>
 

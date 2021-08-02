@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Gowun+Batang:wght@400;700&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Oswald:wght@200;300;400;500;600;700&display=swap');
 
 * {
   padding: 0;
@@ -7,12 +7,16 @@
 }
 
 body {
-  font-family: "Gowun Batang", serif;
+  background: url(../images/pizza.png) no-repeat;
+  background-size: cover;
+  font-family: 'Lato', sans-serif;
+  background-color: rgba(0, 0, 0);
 }
 
 nav {
-  background: rgba(255, 255, 0, 1) fixed;
+  background: #ffc107 fixed;
   color: black;
+  font-family: 'Oswald', sans-serif;
 }
 
 .navbar-custom .navbar-text {
@@ -56,15 +60,17 @@ nav #order {
 
 #form-card{
     box-shadow: 0 20px 25px -5px rgba(0, 0, 0, .10), 0 10px 10px -5px rgba(0, 0, 0 , .04);
-    background-color: rgba(255,106,50, 0.7);
+    background-color: rgba(0, 0, 0);
+    border-top: 1px solid #ffc107;
+    border-right: 1px solid #ffc107;
+    border-bottom: 1px solid #ffc107;
     border-radius: 0 20px 20px 0;
-}
-
-
-#main-card{
-    background-color:rgba(15, 15, 15, 0.836) 
+    color: #ffc107;
 }
 
 #main-card img{
+  border-top: 1px solid #ffc107;
+  border-bottom: 1px solid #ffc107;
+  border-left: 1px solid #ffc107;
     border-radius: 20px 0 0 20px;
 }
