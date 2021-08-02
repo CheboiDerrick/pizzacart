@@ -86,13 +86,13 @@ createPizzaItem = () => {
     console.log(pizzas);
     console.log(newPizza);
     console.log(totalcost);
-    console.log(newPizza.toppingsType.toString())
+    console.log(newPizza.toppingsType.join(', ').toString())
 
     div = document.createElement('div')
     div.setAttribute('class', 'list')
     document.getElementById('item-list').appendChild(div)
     p = document.createElement('p');
-    let orderText = document.createTextNode(newPizza.crustName + ' ' + newPizza.toppingsType + ' ' + newPizza.sizeName);
+    let orderText = document.createTextNode(newPizza.sizeName + ' ' + newPizza.crustName + ' ' + 'with' + ' ' + newPizza.toppingsType.join(', ').toString());
     p.setAttribute('id', 'item');
     p.appendChild(orderText);
     div.appendChild(p);
@@ -101,4 +101,23 @@ createPizzaItem = () => {
     p.setAttribute('id', 'sub-total');
     p.appendChild(subTotalText);
     div.appendChild(p);
+
+    // reset()
 };
+
+
+function reset() {
+    // for (i = 0; i < document.sizes.length; i++)
+    //     document.sizes[i].checked = false;
+
+
+    for (i = 0; i < document.crust.length; i++)
+        document.crust[i].checked = false
+
+
+    for (i = 0; i < document.toppings.length; i++)
+        document.toppings[i].checked = false
+
+    // document.getElementById('totalSum').value = '';
+
+}
