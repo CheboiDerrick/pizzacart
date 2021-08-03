@@ -146,22 +146,8 @@ hr{
     display: inline-block;
 }
 
-#form-card{
-    box-shadow: 0 20px 25px -5px rgba(0, 0, 0, .10), 0 10px 10px -5px rgba(0, 0, 0 , .04);
-    background-color: rgba(0, 0, 0);
-    border-top: 1px solid #ffc107;
-    border-right: 1px solid #ffc107;
-    border-bottom: 1px solid #ffc107;
-    border-radius: 0 20px 20px 0;
-    color: #ffc107;
-}
 
-#main-card img{
-  border-top: 1px solid #ffc107;
-  border-bottom: 1px solid #ffc107;
-  border-left: 1px solid #ffc107;
-  border-radius: 20px 0 0 20px;
-}
+
 
 .list, #grand-total{
   display: flex;

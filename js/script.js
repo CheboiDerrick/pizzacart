@@ -92,7 +92,7 @@ createPizzaItem = () => {
     div.setAttribute('class', 'list')
     document.getElementById('item-list').appendChild(div)
     p = document.createElement('p');
-    let orderText = document.createTextNode(newPizza.sizeName + ' ' + newPizza.crustName + ' ' + 'Pizza' +' ' + 'with' + ' ' + newPizza.toppingsType.join(', ').toString());
+    let orderText = document.createTextNode(newPizza.sizeName + ' ' + newPizza.crustName + ' ' + 'with' + ' ' + newPizza.toppingsType.join(', ').toString());
     p.setAttribute('id', 'item');
     p.appendChild(orderText);
     div.appendChild(p);
