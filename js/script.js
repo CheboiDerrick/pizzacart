@@ -19,7 +19,7 @@ fetchInputs = () => {
     console.log(crust);
     console.log(options);
 }
-
+let totalcost;
 // create new pizza object on every add
 createPizzaItem = () => {
     fetchInputs();
@@ -101,15 +101,8 @@ createPizzaItem = () => {
     p.setAttribute('id', 'sub-total');
     p.appendChild(subTotalText);
     div.appendChild(p);
-
-    divTotal = document.createElement('div')
-    divTotal.setAttribute('class', 'grandTotal')
-    document.getElementById('grand-total').appendChild(divTotal)
-    h6 = document.createElement('h6')
-    let totalText = document.createTextNode('Kshs'+ ' ' + totalcost);
-    h6.setAttribute('id', 'totalCost')
-    h6.appendChild(totalText)
-    divTotal.appendChild(h6)
+    let totalText = ('Kshs'+ ' ' + totalcost);
+    document.getElementById('totalCost').innerHTML = totalText
     clearForm()
 };
 
@@ -123,3 +116,9 @@ function clearForm(form) {
         this.selectedIndex = 0;
     });
   };
+
+$('#delivery').click(function () {
+   custName = prompt('Enter your name')
+   custLocation= prompt('Please enter your location for your delivery')
+   alert('Dear ' + custName + ' your order of ' + totalcost + ' will be delivered at ' + custLocation + `.` + 'A delivery fee of 200 applied. Total order amount ' + (totalcost+200))
+})

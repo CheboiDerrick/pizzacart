@@ -34,6 +34,7 @@ nav #order {
 }
 
 .header {
+  width: 100%;
   background-image: linear-gradient(
     to right top,
     #ff4500,
@@ -42,7 +43,7 @@ nav #order {
     #ff7600,
     #ff8300
   ) 0.6;
-  height: 90vh;
+  /* height: 90vh; */
 }
 
 .header h1 {
@@ -75,7 +76,7 @@ nav #order {
     border-radius: 20px 0 0 20px;
 }
 
-.list, .grand-total{
+.list, #grand-total{
   display: flex;
   justify-content: space-between;
   margin: 0 1rem 0 1rem;
