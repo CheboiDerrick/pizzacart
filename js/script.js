@@ -122,3 +122,8 @@ $('#delivery').click(function () {
    custLocation= prompt('Please enter your location for your delivery')
    alert('Dear ' + custName + ' your order of ' + totalcost + ' will be delivered at ' + custLocation + `.` + 'A delivery fee of 200 applied. Total order amount ' + (totalcost+200))
 })
+
+$('#pickup').click(function () {
+    custName = prompt('Enter your name')
+    alert('Dear ' + custName + 'your order of Kshs ' + totalcost + ' will be ready in 10 minute. Avail yourself for pickup' )
+})
