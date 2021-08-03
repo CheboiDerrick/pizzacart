@@ -26,15 +26,27 @@ nav .navbar-nav li a{
   line-height: 53px;
 }
 
+nav .navbar-nav li a:hover{
+  border-bottom: 1px solid #ffc107;
+  background: transparent;
+  transition: ease-in;
+  transition-duration: 800ms;
+}
+
 #order{
   color: black !important;
 }
 
+nav .navbar-nav li a:hover #order{
+  color: #ffc107 !important;
+}
+
 nav .btn {
   background: yellow;
-  height: 70px;
+  height: 60px;
   width: 120px;
   border-radius: 8px;
+  border: none;
 }
 
 hr{
@@ -45,6 +57,7 @@ hr{
 .main-content{
   width: 80%;
   background-color: black;
+  border: 1px solid #ffc107;
 }
 
 .main-content .featured{
@@ -82,7 +95,9 @@ hr{
 .footer{
   background-color: black;
   overflow-x: hidden;
-  width: 100vw;
+  /* width: 100vw; */
+  padding: 0;
+  margin: 0;
 }
 
 .social img{
@@ -119,6 +134,10 @@ hr{
 
 
 /* order form page */
+.order-form{
+  width: 80%;
+  background-color: #121212;
+}
 .crust .form-check{
     display: inline-block;
 }
@@ -141,7 +160,7 @@ hr{
   border-top: 1px solid #ffc107;
   border-bottom: 1px solid #ffc107;
   border-left: 1px solid #ffc107;
-    border-radius: 20px 0 0 20px;
+  border-radius: 20px 0 0 20px;
 }
 
 .list, #grand-total{
