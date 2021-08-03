@@ -125,5 +125,5 @@ $('#delivery').click(function () {
 
 $('#pickup').click(function () {
     custName = prompt('Enter your name')
-    alert('Dear ' + custName + 'your order of Kshs ' + totalcost + ' will be ready in 10 minute. Avail yourself for pickup' )
+    alert('Dear ' + custName + 'your order of Kshs ' + totalcost + ' will be ready in 10 minutes. Avail yourself for pickup. Thank you' )
 })

@@ -7,48 +7,116 @@
 }
 
 body {
-  background: url(../images/pizza.png) no-repeat;
-  background-size: cover;
+
   font-family: 'Lato', sans-serif;
-  background-color: rgba(0, 0, 0);
+  background-color: #777777;
 }
 
 nav {
-  background: #ffc107 fixed;
-  color: black;
+  background: black fixed;
   font-family: 'Oswald', sans-serif;
 }
 
-.navbar-custom .navbar-text {
-  color: black;
+nav .navbar-nav li a{
+  color: white !important;
+  font-family: 'Oswald', sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 36px;
+  line-height: 53px;
+}
+
+#order{
+  color: black !important;
 }
 
 nav .btn {
   background: yellow;
-  border: 1px solid black;
-  border-radius: 4px;
+  height: 70px;
+  width: 120px;
+  border-radius: 8px;
 }
 
-nav #order {
-  color: yellow;
+hr{
+  background-color: #ffc107;
+  height: 2px;
 }
 
-.header {
-  width: 100%;
-  background-image: linear-gradient(
-    to right top,
-    #ff4500,
-    #ff5800,
-    #ff6800,
-    #ff7600,
-    #ff8300
-  ) 0.6;
-  /* height: 90vh; */
+.main-content{
+  width: 80%;
+  background-color: black;
 }
 
-.header h1 {
-  font-weight: bolder;
+.main-content .featured{
+  font-family: Oswald;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 48px;
+  line-height: 71px;
+  color: #FFFFFF;
+  border-right: 1px solid #ffc107;
 }
+
+.main-content .line {
+  height: 4px;
+  background-color: #ffc107;
+  width: 40%;
+}
+
+.main-content p{
+  font-family: 'Lato', sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 24px;
+  line-height: 40px;
+  text-align: center;
+  color: #FFFFFF;
+}
+
+.main-content .btn-lg{
+  background-color: black;
+  color: #ffc107;
+  border: 1px solid #ffc107;
+} 
+
+.footer{
+  background-color: black;
+  overflow-x: hidden;
+  width: 100vw;
+}
+
+.social img{
+  width: 40px;
+}
+
+.footer span{
+  font-family: Lato;
+  font-style: italic;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 17px;
+  color: rgba(255, 195, 0, 0.5);
+}
+
+.footer h5{
+  font-family: Oswald;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 24px;
+  line-height: 36px;
+  color: #FFFFFF;
+}
+
+.footer p{
+  font-family: Lato;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 18px;
+  line-height: 22px;
+  text-align: center;
+  color: #FFFFFF;
+}
+
 
 /* order form page */
 .crust .form-check{
