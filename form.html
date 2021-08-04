@@ -54,11 +54,11 @@
         <!-- order form -->
         <div class="order-form row container-fluid mx-auto">
             <div class="my-3 col-lg-6">
-                <h3>ORDER</h3>
+                <h4>ORDER</h4>
                 <div class="accent"></div>
                 <div class="mx-auto" style="width: 100%;">
-                    <label for="sizes" class="form-label">SIZE</label>
-                    <select style="width: 80%;" id="sizes" name="sizes" class="form-select form-select-sm mx-auto  mb-3"
+                    <label id="size" for="sizes" class="form-label">SIZE</label>
+                    <select style="width: 88%;" id="sizes" name="sizes" class="form-select form-select-sm mx-auto  mb-3"
                         aria-label=".form-select-sm example">
                         <option selected value="default">Select your Pizza size</option>
                         <option value="Mini">Mini - 6"</option>
@@ -67,12 +67,12 @@
                         <option value="Fiesta">Fiesta - 16" </option>
                     </select>
                 </div>
-                <div class="row">
-                    <div class="col-6">
-                        <label for="crust">CRUST</label>
+                <div class="row mx-2">
+                    <div class="col-lg-6 col-sm-12">
+                        <label id="crust" for="crust">CRUST</label>
                         <div class="form-check">
                         <input class="form-check-input" type="radio" name="crust" id="thin" value="Thin">
-                        <label class="form-check-label me-3" for="Thin">
+                        <label class="form-check-label me-3" for="thin">
                             Thin
                         </label>
                     </div>
@@ -97,8 +97,8 @@
                         </label>
                     </div>
                     </div>
-                    <div class="col-6">
-                        <label for="">TOPPINGS</label>
+                    <div class="col-lg-6 col-sm-12">
+                        <label id="toppings" for="">TOPPINGS</label>
                         <div class="form-check">
                             <input class="form-check-input" type="checkbox" name="toppings" value="Pepperoni"
                                 id="pepperoni">
@@ -134,14 +134,12 @@
                         onclick="createPizzaItem()">ADD TO CART</button>
                 </div>
             </div>
-            <div class="col-lg-4">
-                <div class="my-3 d-inline-block">
+            <div class="order-summary my-4 col-lg-6">
+                <div class="d-flex">
                     <div class="accent2"></div>
-                    <h3>YOUR ORDER</h3>
+                    <h4 class="d-inline ms-3">YOUR ORDER</h4>
                 </div>
                 <div id="item-list">
-                    <!-- <p id="item" class="item"></p> -->
-                    <!-- <p id="sub-total"></p> -->
                 </div>
                 <hr id="cart">
                 <div id="grand-total">

@@ -1,5 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Oswald:wght@200;300;400;500;600;700&display=swap');
 
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200;300;400&display=swap');
+
 * {
   padding: 0;
   margin: 0;
@@ -61,7 +63,7 @@ hr{
 }
 
 .main-content .featured{
-  font-family: Oswald;
+  font-family: 'Oswald', sans-serif;
   font-style: normal;
   font-weight: normal;
   font-size: 48px;
@@ -114,7 +116,7 @@ hr{
 }
 
 .footer h5{
-  font-family: Oswald;
+  font-family: 'Oswald', sans-serif;
   font-style: normal;
   font-weight: normal;
   font-size: 24px;
@@ -137,6 +139,49 @@ hr{
 .order-form{
   width: 80%;
   background-color: #121212;
+  border: 1px solid #ffc107;
+}
+
+.accent{
+  background-color: #ffc107;
+  height: 4px;
+  width: 30%;
+}
+
+.order-form h4{
+  font-family: 'Oswald', sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 48px;
+  line-height: 71px;
+}
+
+#size, #crust, #toppings{
+  font-family: 'Oswald', sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 36px;
+  line-height: 53px;
+  color: #FFC300;
+}
+
+.order-form label{
+  font-family: Lato;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 24px;
+  line-height: 29px;
+  color: #FFFFFF;
+}
+
+.accent2{
+  background-color: #ffc107;
+  width: 4px;
+  height: 40px;
+}
+
+.col-lg-6{
+  color: white;
 }
 .crust .form-check{
     display: inline-block;
@@ -154,3 +199,44 @@ hr{
   justify-content: space-between;
   margin: 0 1rem 0 1rem;
 }
+
+/* .radio-item {
+  display: inline-block;
+  position: relative;
+  padding: 0 6px;
+  margin: 10px 0 0;
+}
+
+.radio-item input[type='radio'] {
+  display: none;
+}
+
+.radio-item label {
+  color: #666;
+  font-weight: normal;
+}
+
+.radio-item label:before {
+  content: " ";
+  display: inline-block;
+  position: relative;
+  top: 5px;
+  margin: 0 5px 0 0;
+  width: 20px;
+  height: 20px;
+  border-radius: 11px;
+  border: 2px solid #004c97;
+  background-color: transparent;
+}
+
+.radio-item input[type=radio]:checked + label:after {
+  border-radius: 11px;
+  width: 12px;
+  height: 12px;
+  position: absolute;
+  top: 9px;
+  left: 10px;
+  content: " ";
+  display: block;
+  background: #004c97;
+} */
