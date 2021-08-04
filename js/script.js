@@ -5,9 +5,9 @@ let options, size, crust, toppings;
 // Pizza object constructor
 function PizzaItem(size, toppings, crust, individualCost) {
     this.sizeName = size,
-    this.toppingsType = toppings,
-    this.crustName = crust,
-    this.cost = individualCost
+        this.toppingsType = toppings,
+        this.crustName = crust,
+        this.cost = individualCost
 }
 
 // get the user inputs
@@ -56,7 +56,7 @@ createPizzaItem = () => {
         }
 
         console.log(crustCost);
-        toppingsCost=0;
+        toppingsCost = 0;
         toppings.forEach(element => {
             if (element == 'Pepperoni') {
                 toppingsCost += 300;
@@ -72,7 +72,7 @@ createPizzaItem = () => {
             }
             console.log(toppingsCost);
         });
-        totalCost=crustCost + sizeCost + toppingsCost
+        totalCost = crustCost + sizeCost + toppingsCost
         console.log(totalCost)
         return totalCost
     };
@@ -97,33 +97,33 @@ createPizzaItem = () => {
     p.appendChild(orderText);
     div.appendChild(p);
     p = document.createElement('p');
-    let subTotalText = document.createTextNode('@'+ ' ' + newPizza.cost);
+    let subTotalText = document.createTextNode('@' + ' ' + newPizza.cost);
     p.setAttribute('id', 'sub-total');
     p.appendChild(subTotalText);
     div.appendChild(p);
-    let totalText = ('Kshs'+ ' ' + totalcost);
+    let totalText = ('Kshs' + ' ' + totalcost);
     document.getElementById('totalCost').innerHTML = totalText
     clearForm()
 };
 
 function clearForm(form) {
-    $(':input', form).each(function() {
-      var type = this.type;
-      var tag = this.tagName.toLowerCase(); 
-      if (type == 'checkbox' || type == 'radio')
-        this.checked = false;
-      else if (tag == 'select')
-        this.selectedIndex = 0;
+    $(':input', form).each(function () {
+        var type = this.type;
+        var tag = this.tagName.toLowerCase();
+        if (type == 'checkbox' || type == 'radio')
+            this.checked = false;
+        else if (tag == 'select')
+            this.selectedIndex = 0;
     });
-  };
+};
 
 $('#delivery').click(function () {
-   custName = prompt('Enter your name')
-   custLocation= prompt('Please enter your location for your delivery')
-   alert('Dear ' + custName + ' your order of ' + totalcost + ' will be delivered at ' + custLocation + `.` + 'A delivery fee of 200 applied. Total order amount ' + (totalcost+200))
+    custName = prompt('Enter your name')
+    custLocation = prompt('Please enter your location for your delivery')
+    alert('Dear ' + custName + ' your order of ' + totalcost + ' will be delivered at ' + custLocation + `.` + 'A delivery fee of 200 applied. Total order amount ' + (totalcost + 200))
 })
 
 $('#pickup').click(function () {
     custName = prompt('Enter your name')
-    alert('Dear ' + custName + 'your order of Kshs ' + totalcost + ' will be ready in 10 minutes. Avail yourself for pickup. Thank you' )
+    alert('Dear ' + custName + 'your order of Kshs ' + totalcost + ' will be ready in 10 minutes. Avail yourself for pickup. Thank you')
 })

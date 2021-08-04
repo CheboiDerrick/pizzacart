@@ -26,66 +26,67 @@
 </head>
 
 <body>
-        <!-- navigation bar -->
-        <nav class="navbar navbar-expand-lg navbar-light ">
-            <div class="container-fluid">
-              <a class="navbar-brand" href="./index.html"><img class="ms-4" src="./images/logo.svg" alt="pizza 'n chill logo" height="100em"></a>
-              <!-- collapsing menu - hamburger  -->
-              <button class="navbar-toggler" type="button"data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <!-- navigation bar -->
+    <nav class="navbar navbar-expand-lg navbar-light ">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="./index.html"><img class="ms-4" src="./images/logo.svg"
+                    alt="pizza 'n chill logo" height="100em"></a>
+            <!-- collapsing menu - hamburger  -->
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
-              </button>
-              <!-- menu items -->
-              <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            </button>
+            <!-- menu items -->
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul class="navbar-nav ms-auto mb-lg-0">
-                  <li class="nav-item">
-                    <a class="nav-link active" aria-current="page" href="#">Home</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="#">About Us</a>
-                  </li>
-                  <li class="nav-item">
-                    <a id="order" href="./form.html" class="nav-link btn btn-primary">Call Us</a>
-                  </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">About Us</a>
+                    </li>
+                    <li class="nav-item">
+                        <a id="order" href="./form.html" class="nav-link btn btn-primary">Call Us</a>
+                    </li>
                 </ul>
-              </div>
             </div>
-        </nav>
-        <hr>
-        <!-- order form -->
-        <div class="order-form row container-fluid mx-auto">
-            <div class="my-3 col-lg-6">
-                <h4>ORDER</h4>
-                <div class="accent"></div>
-                <div class="mx-auto" style="width: 100%;">
-                    <label id="size" for="sizes" class="form-label">SIZE</label>
-                    <select style="width: 88%;" id="sizes" name="sizes" class="form-select form-select-sm mx-auto  mb-3"
-                        aria-label=".form-select-sm example">
-                        <option selected value="default">Select your Pizza size</option>
-                        <option value="Mini">Mini - 6"</option>
-                        <option value="Regular">Regular - 10"</option>
-                        <option value="Large">Large - 14" </option>
-                        <option value="Fiesta">Fiesta - 16" </option>
-                    </select>
-                </div>
-                <div class="row mx-2">
-                    <div class="col-lg-6 col-sm-12">
-                        <label id="crust" for="crust">CRUST</label>
-                        <div class="form-check">
+        </div>
+    </nav>
+    <hr>
+    <!-- order form -->
+    <div id="order-form" class="order-form row container-fluid mx-auto">
+        <div class="my-3 col-lg-6">
+            <h4>ORDER</h4>
+            <div class="accent"></div>
+            <div class="mx-auto" style="width: 100%;">
+                <label id="size" for="sizes" class="form-label">SIZE</label>
+                <select style="width: 88%;" id="sizes" name="sizes" class="form-select form-select-sm mx-auto  mb-3"
+                    aria-label=".form-select-sm example">
+                    <option selected value="default">Select your Pizza size</option>
+                    <option value="Mini">Mini - 6"</option>
+                    <option value="Regular">Regular - 10"</option>
+                    <option value="Large">Large - 14" </option>
+                    <option value="Fiesta">Fiesta - 16" </option>
+                </select>
+            </div>
+            <div class="row mx-2">
+                <div class="col-lg-6 col-sm-12">
+                    <label id="crust" for="crust">CRUST</label>
+                    <div class="form-check">
                         <input class="form-check-input" type="radio" name="crust" id="thin" value="Thin">
                         <label class="form-check-label me-3" for="thin">
                             Thin
                         </label>
                     </div>
                     <div class="form-check">
-                        <input class="form-check-input" type="radio" name="crust" id="flatbread"
-                            value="Flatbread">
+                        <input class="form-check-input" type="radio" name="crust" id="flatbread" value="Flatbread">
                         <label class="form-check-label me-3" for="flatbread">
                             Flatbread
                         </label>
                     </div>
                     <div class="form-check">
-                        <input class="form-check-input" type="radio" name="crust" id="stuffed"
-                            value="Stuffed">
+                        <input class="form-check-input" type="radio" name="crust" id="stuffed" value="Stuffed">
                         <label class="form-check-label me-3" for="stuffed">
                             Stuffed
                         </label>
@@ -96,74 +97,72 @@
                             Pizza Bagel
                         </label>
                     </div>
-                    </div>
-                    <div class="col-lg-6 col-sm-12">
-                        <label id="toppings" for="">TOPPINGS</label>
-                        <div class="form-check">
-                            <input class="form-check-input" type="checkbox" name="toppings" value="Pepperoni"
-                                id="pepperoni">
-                            <label class="form-check-label me-2" for="pepperoni">
-                                Pepperoni
-                            </label>
-                        </div>
-                        <div class="form-check">
-                            <input class="form-check-input" type="checkbox" name="toppings" value="Bacon"
-                                id="bacon">
-                            <label class="form-check-label me-2" for="bacon">
-                                Bacon
-                            </label>
-                        </div>
-                        <div class="form-check">
-                            <input class="form-check-input" type="checkbox" name="toppings" value="Mushroom"
-                                id="mushroom">
-                            <label class="form-check-label me-2" for="mushroom">
-                                Mushroom
-                            </label>
-                        </div>
-                        <div class="form-check">
-                            <input class="form-check-input" type="checkbox" name="toppings" value="Greenpepper"
-                                id="greenpepper">
-                            <label class="form-check-label me-2" for="greenpepper">
-                                Green Peppers
-                            </label>
-                        </div>
-                    </div>
                 </div>
-                <div class="text-center">
-                    <button type="button" class="btn btn-warning mt-3"
-                        onclick="createPizzaItem()">ADD TO CART</button>
+                <div class="col-lg-6 col-sm-12">
+                    <label id="toppings" for="">TOPPINGS</label>
+                    <div class="form-check">
+                        <input class="form-check-input" type="checkbox" name="toppings" value="Pepperoni"
+                            id="pepperoni">
+                        <label class="form-check-label me-2" for="pepperoni">
+                            Pepperoni
+                        </label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="checkbox" name="toppings" value="Bacon" id="bacon">
+                        <label class="form-check-label me-2" for="bacon">
+                            Bacon
+                        </label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="checkbox" name="toppings" value="Mushroom" id="mushroom">
+                        <label class="form-check-label me-2" for="mushroom">
+                            Mushroom
+                        </label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="checkbox" name="toppings" value="Greenpepper"
+                            id="greenpepper">
+                        <label class="form-check-label me-2" for="greenpepper">
+                            Green Peppers
+                        </label>
+                    </div>
                 </div>
             </div>
-            <div class="order-summary my-4 col-lg-6">
-                <div class="d-flex">
-                    <div class="accent2"></div>
-                    <h4 class="d-inline ms-3">YOUR ORDER</h4>
-                </div>
-                <div id="item-list">
-                </div>
-                <hr id="cart">
-                <div id="grand-total">
-                    <h6>Total</h6>
-                  
-                    <h6 class="total" id="totalCost"></h6>
-                
-                </div>
-                
-                <div class="text-center">
+            <div class="text-center">
+                <button type="button" class="btn btn-warning mt-3" onclick="createPizzaItem()">ADD TO CART</button>
+            </div>
+        </div>
+        <div class="order-summary my-4 col-lg-6">
+            <div class="d-flex">
+                <div class="accent2"></div>
+                <h4 class="d-inline ms-3">YOUR ORDER</h4>
+            </div>
+            <div id="item-list">
+            </div>
+            <hr id="cart">
+            <div id="grand-total">
+                <h6>Total</h6>
+
+                <h6 class="total" id="totalCost"></h6>
+
+            </div>
+
+            <div class="text-center">
                 <button type="button" class="btn btn-warning mt-3 mb-3 me-2" id="delivery">Delivery</button>
                 <button id="pickup" type="button" class="btn btn-warning mt-3 mb-3">Self Pickup</button>
-                </div>
             </div>
-        </div>     
+        </div>
+    </div>
     <div class="row footer mt-3 container-fluid">
         <div class="col-lg-4 col-md-4 col-sm-12 te">
-          <img class="img-fluid d-block mx-auto" src="./images/logo.svg" height="80px" alt="">
+            <img class="img-fluid d-block mx-auto" src="./images/logo.svg" height="80px" alt="">
         </div>
-        <div class="col-lg-4 col-md-4 col-sm-12 d-flex flex-column justify-content-center align-content-center text-center">
-          <h5>ADDRESS</h5>
-          <p>The Green House Mall <br>
-            Ngong Rd, Nairobi <br>
-            Ground Floor</p>
+        <div
+            class="col-lg-4 col-md-4 col-sm-12 d-flex flex-column justify-content-center align-content-center text-center">
+            <h5>ADDRESS</h5>
+            <p>The Green House Mall <br>
+                Ngong Rd, Nairobi <br>
+                Ground Floor</p>
             <span>Copyright 2021 | PIZZA ‘n CHILL</span>
         </div>
         <div class="social col-lg-4 col-md-4 col-sm-12  d-flex justify-content-around align-content-center">
@@ -171,9 +170,7 @@
             <img src="./images/twitter.svg" alt="">
             <img src="./images/instagram.svg" alt="">
         </div>
-
-      </div>
+    </div>
     <script src="./js/script.js"></script>
 </body>
-
 </html>
