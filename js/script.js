@@ -1,6 +1,6 @@
 // Global variables
 let pizzas = [];
-let options, size, crust, toppings;
+let options, size, crust, toppings, quantity, crustValue;
 
 // Pizza object constructor
 function PizzaItem(size, toppings, crust, individualCost) {
@@ -13,15 +13,31 @@ function PizzaItem(size, toppings, crust, individualCost) {
 // get the user inputs
 fetchInputs = () => {
     size = document.getElementById("sizes").value;
-    crust = document.querySelector("[name='crust']:checked").value;
+    crustValue = document.querySelector("[name='crust']:checked")
     options = document.querySelectorAll("[name='toppings']:checked");
     quantity = parseInt(document.getElementById("item-quantity").value);
-    console.log(size);
-    console.log(crust);
-    console.log(options);
-    console.log(quantity);
+    console.log(crustValue);
 }
 let totalcost;
+
+let validate = () => {
+    fetchInputs ()
+    console.log(crustValue);
+    if (size=="default") {
+        alert('Please select your pizza size')
+    } else if (crustValue==null) {
+        alert('Please select your pizza crust')
+    } else if (options.length==0) {
+        alert('Please select your preferred pizza toppings')
+    } else if (isNaN(quantity)|| quantity<=0) {
+        quantity.value=1
+        alert('Please add a quantiy to your order')
+    } else {
+        crust=crustValue.value
+        console.log(crust);
+        createPizzaItem()
+    }
+}
 // create new pizza object on every add
 createPizzaItem = () => {
     fetchInputs();
@@ -74,7 +90,7 @@ createPizzaItem = () => {
             }
             console.log(toppingsCost);
         });
-        totalCost = (crustCost + sizeCost + toppingsCost)*quantity;
+        totalCost = (crustCost + sizeCost + toppingsCost) * quantity;
         console.log(totalCost)
         return totalCost
     };
@@ -94,7 +110,7 @@ createPizzaItem = () => {
     div.setAttribute('class', 'list')
     document.getElementById('item-list').appendChild(div)
     p = document.createElement('p');
-    let orderText = document.createTextNode(newPizza.sizeName + ' ' + newPizza.crustName + ' ' + 'with' + ' ' + newPizza.toppingsType.join(', ').toString());
+    let orderText = document.createTextNode(quantity + ' ' + newPizza.sizeName + ' ' + newPizza.crustName + ' ' + 'with' + ' ' + newPizza.toppingsType.join(', ').toString());
     p.setAttribute('id', 'item');
     p.appendChild(orderText);
     div.appendChild(p);
