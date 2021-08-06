@@ -29,7 +29,8 @@ nav .navbar-nav li a{
 }
 
 nav .navbar-nav li a:hover{
-  border-bottom: 1px solid #ffc107;
+  border-bottom: 1px solid white;
+  color: #ffc107 !important;
   background: transparent;
   transition: ease-in;
   transition-duration: 800ms;
@@ -53,7 +54,7 @@ nav .btn {
 
 hr{
   background-color: #ffc107;
-  height: 2px;
+  border: 2px solid #ffc107;
 }
 
 .main-content{
@@ -97,7 +98,6 @@ hr{
 .footer{
   background-color: black;
   overflow-x: hidden;
-  /* width: 100vw; */
   padding: 0;
   margin: 0;
 }
@@ -156,7 +156,12 @@ hr{
   line-height: 71px;
 }
 
-#size, #crust, #toppings{
+#quantity input{
+  width: 20%;
+  margin-right: 20px;
+}
+
+#size, #crust, #toppings, #quantity label{
   font-family: 'Oswald', sans-serif;
   font-style: normal;
   font-weight: normal;
@@ -169,7 +174,7 @@ hr{
   font-family: Lato;
   font-style: normal;
   font-weight: 300;
-  font-size: 24px;
+  font-size: 20px;
   line-height: 29px;
   color: #FFFFFF;
 }
@@ -191,16 +196,32 @@ hr{
     display: inline-block;
 }
 
-
-
-
 .list, #grand-total{
   display: flex;
   justify-content: space-between;
   margin: 0 1rem 0 1rem;
 }
 
-/* .radio-item {
+.card-section{
+  width: 80%;
+  color: #FFFFFF;
+}
+
+.card {
+  background-color: #ffc107;
+}
+
+.card .card-body{
+  background-color: black;
+}
+
+.card-section .btn-warning:hover{
+    background: none;
+    border: 1px solid #ffc107;
+    color:#ffc107
+}
+
+.radio-item {
   display: inline-block;
   position: relative;
   padding: 0 6px;
@@ -239,4 +260,4 @@ hr{
   content: " ";
   display: block;
   background: #004c97;
-} */
+}

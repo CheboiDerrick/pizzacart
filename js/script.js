@@ -15,9 +15,11 @@ fetchInputs = () => {
     size = document.getElementById("sizes").value;
     crust = document.querySelector("[name='crust']:checked").value;
     options = document.querySelectorAll("[name='toppings']:checked");
+    quantity = parseInt(document.getElementById("item-quantity").value);
     console.log(size);
     console.log(crust);
     console.log(options);
+    console.log(quantity);
 }
 let totalcost;
 // create new pizza object on every add
@@ -72,7 +74,7 @@ createPizzaItem = () => {
             }
             console.log(toppingsCost);
         });
-        totalCost = crustCost + sizeCost + toppingsCost
+        totalCost = (crustCost + sizeCost + toppingsCost)*quantity;
         console.log(totalCost)
         return totalCost
     };
